@@ -1,10 +1,12 @@
-a = []
-b = 20
-c = true
-d = ''
+let listaFuncionarios = ['José', 'Ana', 'Luiza']
+let listaIdades = [22,19,33]
 
-if (d) {
-    console.log('Verdade')
-} else {
-    console.log('Falso')
+const exibeLista = (lista, descricao) => {
+    e = ''
+        for (let i = 0; i < lista.length; i++){
+            e += '\n'+ descricao + lista [i]
+        }
 }
+
+console.log(exibeLista(listaFuncionarios, 'Funcionário: '))
+console.log(exibeLista(listaIdades, "Idades: "))
