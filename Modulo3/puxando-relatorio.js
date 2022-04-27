@@ -21,6 +21,15 @@ const cliente = {
   }
 }
 
-console.log(cliente.saldo)
-cliente.depositar(30)
-console.log(cliente.saldo)
+let relatorio="";
+
+for ( let info in cliente){
+    if(typeof cliente[info] === "object" || typeof cliente[info] === "function"){
+        continue
+    }else{
+        relatorio += `
+        ${info} ==> ${cliente[info]}
+        `
+    }    
+}
+console.log(relatorio)

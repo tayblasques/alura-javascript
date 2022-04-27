@@ -1,13 +1,15 @@
 const cliente = {
-    nome:"Tayná",
-    idade:"26",
-    cpf:"85642315468",
-    email:"tayna@email.com"
+  nome:"Andre",
+  idade:36,
+  cpf:"12543652266",
+  email:"andre@email.com"
 }
 
-const chaves = ["nome", "idade", "cpf", "email"]
-//notação de colchetes -> quando se usa objeto com array
-//console.log(cliente[chaves[0]])
+                //0     //1
+const chaves = ["nome","idade","cpf","email"]
 
-//chamei o array e fiz um forEach para que todos os dados fossem printados
+// console.log(cliente[chaves[0]])
+
 chaves.forEach(info => console.log(cliente[info]))
+
+console.log(cliente["conta"])

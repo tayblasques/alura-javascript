@@ -1,10 +1,9 @@
 const cliente = {
-    nome:"Tayná",
-    idade:"26",
-    cpf:"85642315468",
-    email:"tayna@email.com",
-    fones:["55912345498", "1121988743124"]
+  nome:"Andre",
+  idade:36,
+  cpf:"12543652266",
+  email:"andre@email.com",
+  fones:["5591235498","5521988743124"]
 }
 
 cliente.fones.forEach(fone => console.log(fone))
-
